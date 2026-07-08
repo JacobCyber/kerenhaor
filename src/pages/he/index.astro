@@ -1,0 +1,12 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import PageIndexContent from "@/components/PageIndexContent.astro";
+import { t } from "@/i18n";
+
+const locale = "he";
+const title = t(locale, "siteName");
+---
+
+<Layout title={title} locale={locale}>
+	<PageIndexContent locale={locale} />
+</Layout>

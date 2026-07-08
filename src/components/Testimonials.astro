@@ -1,0 +1,51 @@
+---
+import LucideQuote from "~icons/lucide/quote";
+import type { Locale } from "@/i18n";
+import { t } from "@/i18n";
+
+const { locale = "en" } = Astro.props as { locale: Locale };
+
+const testimonials = [
+	{
+		quote: t(locale, "testimonials.testimonial1Quote"),
+		name: t(locale, "testimonials.testimonial1Name"),
+		role: t(locale, "testimonials.testimonial1Role"),
+	},
+	{
+		quote: t(locale, "testimonials.testimonial2Quote"),
+		name: t(locale, "testimonials.testimonial2Name"),
+		role: t(locale, "testimonials.testimonial2Role"),
+	},
+	{
+		quote: t(locale, "testimonials.testimonial3Quote"),
+		name: t(locale, "testimonials.testimonial3Name"),
+		role: t(locale, "testimonials.testimonial3Role"),
+	},
+];
+---
+
+<div
+	class="testimonials-carousel bar flex overflow-x-auto snap-x snap-mandatory gap-6 pb-4 md:grid md:grid-cols-3 md:overflow-visible md:pb-0 md:gap-8"
+>
+	{
+		testimonials.map((t) => (
+			<div class="snap-start shrink-0 w-[85%] md:w-auto flex flex-col items-start bg-white rounded-2xl px-8 pb-8 pt-16 shadow relative">
+				<LucideQuote class="size-8 text-brand-blue/30 absolute top-6 right-6" />
+				<p class="italic leading-relaxed mb-6">"{t.quote}"</p>
+				<div class="mt-auto">
+					<div class="font-bold">{t.name}</div>
+					<div class="text-brand-foreground/60 text-sm">{t.role}</div>
+				</div>
+			</div>
+		))
+	}
+</div>
+
+<style>
+	.testimonials-carousel {
+		scrollbar-width: none;
+	}
+	.testimonials-carousel::-webkit-scrollbar {
+		display: none;
+	}
+</style>

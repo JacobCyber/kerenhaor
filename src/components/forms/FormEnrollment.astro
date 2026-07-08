@@ -1,0 +1,86 @@
+---
+import Button from "@/components/buttons/Button.astro";
+import type { Locale } from "@/i18n";
+import { t } from "@/i18n";
+
+const { locale = "en" } = Astro.props as { locale: Locale };
+const nameLabel = t(locale, "formVolunteer.nameLabel");
+const namePlaceholder = t(locale, "formVolunteer.namePlaceholder");
+const emailLabel = t(locale, "formVolunteer.emailLabel");
+const emailPlaceholder = t(locale, "formVolunteer.emailPlaceholder");
+const phoneLabel = t(locale, "formVolunteer.phoneLabel");
+const phonePlaceholder = t(locale, "formVolunteer.phonePlaceholder");
+const cityLabel = t(locale, "formVolunteer.cityLabel");
+const cityPlaceholder = t(locale, "formVolunteer.cityPlaceholder");
+const helpLabel = t(locale, "formVolunteer.helpLabel");
+const helpOption1 = t(locale, "formVolunteer.helpOption1");
+const helpOption2 = t(locale, "formVolunteer.helpOption2");
+const helpOption3 = t(locale, "formVolunteer.helpOption3");
+const helpOption4 = t(locale, "formVolunteer.helpOption4");
+const helpOption5 = t(locale, "formVolunteer.helpOption5");
+const helpOption6 = t(locale, "formVolunteer.helpOption6");
+const notesLabel = t(locale, "formVolunteer.notesLabel");
+const notesPlaceholder = t(locale, "formVolunteer.notesPlaceholder");
+const submit = t(locale, "formVolunteer.submit");
+---
+
+<form class="flex flex-col gap-4" onsubmit="return false;">
+	<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+		<div class="flex flex-col gap-1.5">
+			<label class="text-sm font-bold">{nameLabel}</label>
+			<input
+				type="text"
+				placeholder={namePlaceholder}
+				class="rounded-lg border border-gray-200 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-brand-blue/40"
+			/>
+		</div>
+		<div class="flex flex-col gap-1.5">
+			<label class="text-sm font-bold">{emailLabel}</label>
+			<input
+				type="email"
+				placeholder={emailPlaceholder}
+				class="rounded-lg border border-gray-200 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-brand-blue/40"
+			/>
+		</div>
+	</div>
+	<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+		<div class="flex flex-col gap-1.5">
+			<label class="text-sm font-bold">{phoneLabel}</label>
+			<input
+				type="tel"
+				placeholder={phonePlaceholder}
+				class="rounded-lg border border-gray-200 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-brand-blue/40"
+			/>
+		</div>
+		<div class="flex flex-col gap-1.5">
+			<label class="text-sm font-bold">{cityLabel}</label>
+			<input
+				type="text"
+				placeholder={cityPlaceholder}
+				class="rounded-lg border border-gray-200 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-brand-blue/40"
+			/>
+		</div>
+	</div>
+	<div class="flex flex-col gap-1.5">
+		<label class="text-sm font-bold">{helpLabel}</label>
+		<select
+			class="rounded-lg border border-gray-200 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-brand-blue/40"
+		>
+			<option>{helpOption1}</option>
+			<option>{helpOption2}</option>
+			<option>{helpOption3}</option>
+			<option>{helpOption4}</option>
+			<option>{helpOption5}</option>
+			<option>{helpOption6}</option>
+		</select>
+	</div>
+	<div class="flex flex-col gap-1.5">
+		<label class="text-sm font-bold">{notesLabel}</label>
+		<textarea
+			rows="4"
+			placeholder={notesPlaceholder}
+			class="rounded-lg border border-gray-200 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-brand-blue/40 resize-none"
+		></textarea>
+	</div>
+	<Button variant="blue" size="lg" class="w-full justify-center">{submit}</Button>
+</form>

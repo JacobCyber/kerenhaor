@@ -1,0 +1,208 @@
+{
+  "siteName": "Keren HaOhr",
+  "siteNameFull": "Keren HaOhr",
+  "siteSlogan": "Bringing Light to Families in Need",
+
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "ourTeam": "Our Team",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "title": "Keren HaOhr",
+    "subtitle": "Bringing Light to Families in Need",
+    "description": "We are an Israeli non-profit dedicated to helping families struggling with food insecurity and lack of essential supplies. Every family deserves dignity, warmth, and hope.",
+    "ctaPrimary": "Get Help",
+    "ctaSecondary": "Learn More"
+  },
+
+  "infoCards": {
+    "heading": "How We Help",
+    "card1Title": "Food Packages",
+    "card1Desc": "Monthly shipments of nutritious food staples delivered directly to families in need.",
+    "card2Title": "Clothing & Essentials",
+    "card2Desc": "New and gently used clothing, shoes, and hygiene products for all ages.",
+    "card3Title": "Emergency Aid",
+    "card3Desc": "Immediate assistance for families facing crises, accidents, or unexpected hardship.",
+    "card4Title": "Holiday Support",
+    "card4Desc": "Food baskets, gifts, and supplies so every family can celebrate with dignity."
+  },
+
+  "mission": {
+    "heading": "Our Mission",
+    "description": "At Keren HaOhr, we believe no family should go hungry or lack basic necessities. We provide food packages, clothing, school supplies, and holiday support to thousands of families across Israel. With your help, we bring light into their lives."
+  },
+
+  "stats": {
+    "stat1Label": "Families Helped",
+    "stat1Value": "1,200+",
+    "stat2Label": "Volunteers",
+    "stat2Value": "300+",
+    "stat3Label": "Meals Distributed",
+    "stat3Value": "50,000+"
+  },
+
+  "programs": {
+    "heading": "What We Provide",
+    "description": "From nourishing meals to warm clothing — we support families with their most urgent needs.",
+    "program1Title": "Nutritional Food Baskets",
+    "program1Desc": "Monthly food baskets packed with fresh produce, grains, proteins, and dairy to sustain families through the month.",
+    "program2Title": "Warm Clothing Drive",
+    "program2Desc": "Winter coats, shoes, and warm clothing distributed before the cold season to keep children warm.",
+    "program3Title": "School Supplies",
+    "program3Desc": "Backpacks filled with notebooks, pens, and supplies so every child can start the school year prepared.",
+    "program4Title": "Holiday Celebrations",
+    "program4Desc": "Special holiday food packages and gifts for Rosh Hashanah, Passover, and other Jewish holidays."
+  },
+
+  "schedule": {
+    "heading": "Monthly Distribution Schedule",
+    "description": "Here's how we serve our community throughout the month.",
+    "item1Time": "Week 1",
+    "item1Activity": "Food Package Assembly & Distribution",
+    "item2Time": "Week 2",
+    "item2Activity": "Clothing Distribution & Sorting",
+    "item3Time": "Week 3",
+    "item3Activity": "Emergency Aid Assessments",
+    "item4Time": "Week 4",
+    "item4Activity": "Holiday Preparations & Special Drives",
+    "item5Time": "Ongoing",
+    "item5Activity": "Volunteer Coordination & Donor Relations",
+    "item6Time": "Monthly",
+    "item6Activity": "Community Outreach & New Family Intake",
+    "item7Time": "Quarterly",
+    "item7Activity": "Impact Reports & Board Meetings",
+    "item8Time": "Seasonal",
+    "item8Activity": "Back-to-School & Winter Drives",
+    "item9Time": "Year-round",
+    "item9Activity": "Emergency Hotline & Crisis Support"
+  },
+
+  "testimonials": {
+    "heading": "Hear From Our Community",
+    "testimonial1Quote": "Keren HaOhr helped us when my husband lost his job. The food packages meant we didn't have to choose between meals and rent. We'll never forget their kindness.",
+    "testimonial1Name": "Rivka M.",
+    "testimonial1Role": "Mother of 4, Petah Tikva",
+    "testimonial2Quote": "I volunteer every month because I've seen firsthand how these packages transform lives. This organization runs on love and dedication.",
+    "testimonial2Name": "David L.",
+    "testimonial2Role": "Volunteer, Tel Aviv",
+    "testimonial3Quote": "They showed up at our door with warm coats for my children right before winter. We had nothing, and they gave us warmth and dignity.",
+    "testimonial3Name": "Noa K.",
+    "testimonial3Role": "Single Mother, Haifa"
+  },
+
+  "newsletter": {
+    "heading": "Stay Connected",
+    "description": "Sign up for our newsletter to receive updates on our work, volunteer opportunities, and ways to help.",
+    "placeholder": "Enter your email",
+    "subscribe": "Subscribe"
+  },
+
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "q1": "Who is eligible for assistance?",
+    "a1": "Any family in Israel facing financial hardship — whether due to job loss, illness, disability, or other circumstances — can apply. We assess each case confidentially and with dignity.",
+    "q2": "How do I apply for help?",
+    "a2": "Contact us through our website form, call us at 03-796-1984, or visit our office in Petah Tikva. We'll guide you through the simple application process.",
+    "q3": "What do the food packages contain?",
+    "a3": "Our monthly packages include fresh produce, rice, pasta, canned goods, oil, dairy, eggs, chicken, and other nutritional staples tailored to family size.",
+    "q4": "How can I volunteer?",
+    "a4": "We welcome volunteers! We need help with packing and distribution, sorting clothing donations, administrative support, and fundraising events. Sign up on our contact page.",
+    "q5": "How are donations used?",
+    "a5": "90% of every donation goes directly to programs and services. We maintain minimal administrative costs and publish annual impact reports for full transparency."
+  },
+
+  "footer": {
+    "tagline": "Keren HaOhr (\"The Light Fund\") is an Israeli non-profit dedicated to helping families in need with food, clothing, and essential supplies. Together, we bring light to those who need it most.",
+    "contactUs": "Contact Us",
+    "hours": "Hours",
+    "hoursWeekdays": "Sunday – Thursday",
+    "hoursWeekdayTime": "9:00 AM – 5:00 PM",
+    "hoursFriday": "Friday: 9:00 AM – 1:00 PM",
+    "copyright": "All rights reserved."
+  },
+
+  "teamPage": {
+    "title": "Our Team — Keren HaOhr",
+    "heading": "Meet Our Team",
+    "description": "Our dedicated team works tirelessly to bring light and support to families across Israel."
+  },
+
+  "contactPage": {
+    "title": "Contact Us — Keren HaOhr",
+    "heading": "Contact Us",
+    "description": "Have questions, need help, or want to get involved? We'd love to hear from you!",
+    "getInTouch": "Get In Touch",
+    "hoursLabel": "Sun–Thu: 9:00 AM – 5:00 PM",
+    "helpInfoTitle": "Get Help / Volunteer",
+    "helpInfo1": "Assistance applications reviewed within 48 hours",
+    "helpInfo2": "Food packages distributed monthly to qualifying families",
+    "helpInfo3": "Volunteer orientations held every first Sunday of the month",
+    "helpInfo4": "Donations are tax-deductible (Section 46)",
+    "tabContact": "Contact Us",
+    "tabVolunteer": "Volunteer",
+    "contactPanelTitle": "Send Us a Message",
+    "volunteerPanelTitle": "Volunteer Sign-Up"
+  },
+
+  "formContact": {
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Jane Smith",
+    "emailLabel": "Email",
+    "emailPlaceholder": "jane@example.com",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "03-796-1984",
+    "messageLabel": "Message",
+    "messagePlaceholder": "How can we help you? Are you seeking assistance, interested in volunteering, or something else?",
+    "submit": "Send Message"
+  },
+
+  "formVolunteer": {
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Jane Smith",
+    "emailLabel": "Email",
+    "emailPlaceholder": "jane@example.com",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "(050) 000-0000",
+    "cityLabel": "City in Israel",
+    "cityPlaceholder": "Petah Tikva",
+    "helpLabel": "How would you like to help?",
+    "helpOption1": "Food packing & distribution",
+    "helpOption2": "Clothing sorting & organizing",
+    "helpOption3": "Fundraising & events",
+    "helpOption4": "Administrative support",
+    "helpOption5": "Driving & deliveries",
+    "helpOption6": "Other",
+    "notesLabel": "Additional Notes",
+    "notesPlaceholder": "Tell us about your availability, skills, or any questions...",
+    "submit": "Sign Up to Volunteer"
+  },
+
+  "formNewsletter": {
+    "placeholder": "Enter your email",
+    "subscribe": "Subscribe"
+  },
+
+  "team": {
+    "member1Name": "Rachel Cohen",
+    "member1Role": "Executive Director",
+    "member1Bio": "Rachel founded Keren HaOhr in 2018 with a vision to ensure no family in Israel goes hungry.",
+    "member2Name": "Avraham Levy",
+    "member2Role": "Operations Manager",
+    "member2Bio": "Avraham oversees food package assembly, volunteer coordination, and daily logistics across all distribution centers.",
+    "member3Name": "Maya Shalom",
+    "member3Role": "Community Outreach",
+    "member3Bio": "Maya connects with families in need, assesses their situations, and ensures they receive compassionate support.",
+    "member4Name": "Yossi Katz",
+    "member4Role": "Fundraising Director",
+    "member4Bio": "Yossi leads our fundraising efforts, building relationships with donors who share our mission of kindness.",
+    "member5Name": "Tamar Ben-David",
+    "member5Role": "Volunteer Coordinator",
+    "member5Bio": "Tamar recruits, trains, and supports our network of 300+ volunteers who make our work possible.",
+    "member6Name": "Eli Mizrahi",
+    "member6Role": "Logistics & Distribution",
+    "member6Bio": "Eli manages our warehouse, delivery routes, and ensures packages reach families across the country on time."
+  }
+}

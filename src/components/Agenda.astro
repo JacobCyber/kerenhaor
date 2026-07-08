@@ -1,0 +1,34 @@
+---
+import LucideClock from "~icons/lucide/clock";
+import type { Locale } from "@/i18n";
+import { t } from "@/i18n";
+
+const { locale = "en" } = Astro.props as { locale: Locale };
+
+const schedule = [
+	{ time: t(locale, "schedule.item1Time"), activity: t(locale, "schedule.item1Activity"), emoji: "📦" },
+	{ time: t(locale, "schedule.item2Time"), activity: t(locale, "schedule.item2Activity"), emoji: "👕" },
+	{ time: t(locale, "schedule.item3Time"), activity: t(locale, "schedule.item3Activity"), emoji: "🤝" },
+	{ time: t(locale, "schedule.item4Time"), activity: t(locale, "schedule.item4Activity"), emoji: "🎉" },
+	{ time: t(locale, "schedule.item5Time"), activity: t(locale, "schedule.item5Activity"), emoji: "💌" },
+	{ time: t(locale, "schedule.item6Time"), activity: t(locale, "schedule.item6Activity"), emoji: "📋" },
+	{ time: t(locale, "schedule.item7Time"), activity: t(locale, "schedule.item7Activity"), emoji: "📊" },
+	{ time: t(locale, "schedule.item8Time"), activity: t(locale, "schedule.item8Activity"), emoji: "❄️" },
+	{ time: t(locale, "schedule.item9Time"), activity: t(locale, "schedule.item9Activity"), emoji: "📞" },
+];
+---
+
+<div class="max-w-2xl mx-auto">
+	{
+		schedule.map((item) => (
+			<div class="flex items-center gap-4 py-4 border-b border-gray-400/50 last:border-b-0">
+				<div class="flex items-center gap-2 w-28 shrink-0">
+					<LucideClock class="size-4 text-brand-blue" />
+					<span class="font-bold text-sm">{item.time}</span>
+				</div>
+				<span class="text-2xl">{item.emoji}</span>
+				<span>{item.activity}</span>
+			</div>
+		))
+	}
+</div>

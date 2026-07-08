@@ -1,0 +1,17 @@
+---
+import type { Locale } from "@/i18n";
+
+const { locale = "en" } = Astro.props as { locale: Locale };
+
+const currentPath = Astro.url.pathname;
+const targetHref = locale === "en"
+	? "/he" + currentPath
+	: currentPath.replace(/^\/he/, "") || "/";
+---
+
+<a
+	href={targetHref}
+	class="inline-flex items-center gap-1 px-2 py-1 text-sm font-bold rounded-md border border-brand-foreground/20 hover:border-brand-gold hover:text-brand-gold transition whitespace-nowrap"
+>
+	{locale === "en" ? "עברית" : "English"}
+</a>

@@ -1,0 +1,42 @@
+---
+import LucideMail from "~icons/lucide/mail";
+import { Image } from "astro:assets";
+import { getTeam } from "@/data/teachers";
+import type { Locale } from "@/i18n";
+
+const { locale = "en" } = Astro.props as { locale: Locale };
+const team = getTeam(locale);
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+	{
+		team.map((member) => (
+			<div class="bg-white rounded-2xl shadow p-6 flex flex-col items-center text-center">
+				<div
+					class={`w-20 h-20 rounded-full ${member.color} flex items-center justify-center mb-4 relative overflow-hidden`}
+				>
+					<span class="font-fredoka text-2xl text-white">{member.initials}</span>
+					{member.image && (
+						<Image
+							src={member.image}
+							alt={member.name}
+							width={80}
+							height={80}
+							class="absolute inset-0 w-full h-full object-cover rounded-full"
+						/>
+					)}
+				</div>
+				<h3 class="font-fredoka text-xl text-brand-foreground mb-1">{member.name}</h3>
+				<span class="font-nunito font-bold text-sm text-brand-blue mb-3">{member.role}</span>
+				<p class="font-nunito text-sm text-brand-foreground/70 mb-4">{member.bio}</p>
+				<a
+					href={`mailto:${member.email}`}
+					class="inline-flex items-center gap-2 text-sm font-nunito font-bold text-brand-blue hover:underline"
+				>
+					<LucideMail class="w-4 h-4" />
+					{member.email}
+				</a>
+			</div>
+		))
+	}
+</div>

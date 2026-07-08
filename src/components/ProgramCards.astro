@@ -1,0 +1,61 @@
+---
+import LucideApple from '~icons/lucide/apple'
+import LucideShirt from '~icons/lucide/shirt'
+import LucideBackpack from '~icons/lucide/backpack'
+import LucideCake from '~icons/lucide/cake'
+import type { Locale } from "@/i18n";
+import { t } from "@/i18n";
+
+const { locale = "en" } = Astro.props as { locale: Locale };
+
+const programs = [
+	{
+		icon: LucideApple,
+		title: t(locale, "programs.program1Title"),
+		description: t(locale, "programs.program1Desc"),
+		accent: "border-brand-green",
+		iconColor: "text-brand-green",
+	},
+	{
+		icon: LucideShirt,
+		title: t(locale, "programs.program2Title"),
+		description: t(locale, "programs.program2Desc"),
+		accent: "border-brand-blue",
+		iconColor: "text-brand-blue",
+	},
+	{
+		icon: LucideBackpack,
+		title: t(locale, "programs.program3Title"),
+		description: t(locale, "programs.program3Desc"),
+		accent: "border-brand-red",
+		iconColor: "text-brand-red",
+	},
+	{
+		icon: LucideCake,
+		title: t(locale, "programs.program4Title"),
+		description: t(locale, "programs.program4Desc"),
+		accent: "border-brand-yellow",
+		iconColor: "text-brand-yellow",
+	},
+];
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto">
+	{
+		programs.map(({ icon: Icon, title, description, accent, iconColor }) => (
+			<div
+				class={`bg-white rounded-2xl p-6 shadow border-l-4 ${accent}`}
+			>
+				<div class="flex items-start gap-4">
+					<div class={`${iconColor} mt-1`}>
+						<Icon class="w-8 h-8" />
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-brand-foreground mb-2">{title}</h3>
+						<p>{description}</p>
+					</div>
+				</div>
+			</div>
+		))
+	}
+</div>

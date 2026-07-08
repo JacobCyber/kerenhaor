@@ -1,0 +1,49 @@
+---
+import LucidePackage from '~icons/lucide/package'
+import LucideShirt from '~icons/lucide/shirt'
+import LucideHeart from '~icons/lucide/heart'
+import LucideGift from '~icons/lucide/gift'
+import type { Locale } from "@/i18n";
+import { t } from "@/i18n";
+
+const { locale = "en" } = Astro.props as { locale: Locale };
+
+const cards = [
+	{
+		icon: LucidePackage,
+		title: t(locale, "infoCards.card1Title"),
+		description: t(locale, "infoCards.card1Desc"),
+		color: "bg-brand-blue text-white",
+	},
+	{
+		icon: LucideShirt,
+		title: t(locale, "infoCards.card2Title"),
+		description: t(locale, "infoCards.card2Desc"),
+		color: "bg-brand-green text-white",
+	},
+	{
+		icon: LucideHeart,
+		title: t(locale, "infoCards.card3Title"),
+		description: t(locale, "infoCards.card3Desc"),
+		color: "bg-brand-red text-white",
+	},
+	{
+		icon: LucideGift,
+		title: t(locale, "infoCards.card4Title"),
+		description: t(locale, "infoCards.card4Desc"),
+		color: "bg-brand-yellow text-white",
+	},
+];
+---
+
+<div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+	{
+		cards.map(({ icon: Icon, title, description, color }) => (
+			<div class={`p-6 rounded-lg shadow ${color}`}>
+				<Icon class="size-8 mb-3" />
+				<h3 class="text-2xl font-bold mb-4">{title}</h3>
+				<p class="font-semibold">{description}</p>
+			</div>
+		))
+	}
+</div>

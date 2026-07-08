@@ -1,0 +1,27 @@
+---
+import LucideUsers from '~icons/lucide/users'
+import LucideHandHelping from '~icons/lucide/hand-helping'
+import LucideHeart from '~icons/lucide/heart'
+import type { Locale } from "@/i18n";
+import { t } from "@/i18n";
+
+const { locale = "en" } = Astro.props as { locale: Locale };
+
+const stats = [
+	{ icon: LucideUsers, label: t(locale, "stats.stat1Label"), value: t(locale, "stats.stat1Value") },
+	{ icon: LucideHandHelping, label: t(locale, "stats.stat2Label"), value: t(locale, "stats.stat2Value") },
+	{ icon: LucideHeart, label: t(locale, "stats.stat3Label"), value: t(locale, "stats.stat3Value") },
+];
+---
+
+<div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3 max-w-5xl mx-auto">
+	{
+		stats.map((stat) => (
+			<div class="rounded-2xl bg-white shadow p-8 text-center">
+				<stat.icon class="mx-auto size-10 text-brand-blue" />
+				<div class="font-bold font-fredoka mt-3 text-4xl">{stat.value}</div>
+				<div class="mt-1 font-semibold">{stat.label}</div>
+			</div>
+		))
+	}
+</div>
