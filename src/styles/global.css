@@ -4,6 +4,7 @@
 @theme {
 	--font-nunito: "Nunito", "sans-serif";
 	--font-fredoka: "Fredoka", "sans-serif";
+	--font-rubik: "Rubik", "sans-serif";
 	--color-brand-foreground: #1a1a2e;
 	--color-brand-background: #fffaf0;
     --color-brand-blue: #2563eb;
@@ -31,6 +32,10 @@
 
 	body {
 		@apply bg-brand-background text-brand-foreground font-nunito text-lg;
+	}
+
+	[dir="rtl"] {
+		@apply font-rubik;
 	}
 
 	:is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6) {
