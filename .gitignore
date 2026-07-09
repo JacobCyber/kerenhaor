@@ -26,3 +26,7 @@ pnpm-debug.log*
 
 # Local Netlify folder
 .netlify
+
+# Cloudflare / Miniflare cache
+.cache/
+.wrangler/
